@@ -1,0 +1,5 @@
+This is an example.
+We are writing to a file.
+We are appending to a file.
+12 21 2 3333333
+We are writing to the file again.
