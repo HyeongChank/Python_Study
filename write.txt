@@ -1,1 +1,0 @@
-pyinstaller --onefile delete_folder.py
