@@ -20,6 +20,9 @@ for t in text_list:
     else:
         result[t] = 1
 maxvalue = max(result.values())
+print(result.keys())
+print(result.values())
+print(result.get('A'))
 maxkey = [key for key, value in result.items() if value == maxvalue]
 if len(maxkey) >=2:
     print('?')
