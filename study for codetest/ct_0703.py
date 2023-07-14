@@ -71,7 +71,6 @@ def operate(a,b,c):
     for i in range(1, b):
         result *= a
     print(result % c)
-    
 operate(10, 11, 12)
 
 
@@ -88,3 +87,22 @@ def operate(a,b,c):
     else:
         return temp*temp * a % c
 print(operate(10,11,12))
+
+
+
+a,b = map(int, input().split())
+
+coin_list = []
+def operate(a,b):
+    price = b
+    for i in range(a):
+        coin_list.append(int(input()))
+    coin_list.reverse()
+    sum = 0
+    for i in coin_list:
+    
+        if price // i >0:
+            sum += (price//i)
+            price = price % i
+    print(sum)
+operate(a,b)
